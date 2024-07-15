@@ -115,24 +115,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AAASWQ==</data>
-				<key>device-id</key>
-				<data>ElkAAA==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Built In</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>layout-id</key>
-				<data>CwAAAA==</data>
-				<key>model</key>
-				<string>Realtek ALC1150</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -150,6 +132,24 @@
 				<string>Audio device</string>
 				<key>model</key>
 				<string>Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590]</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Built In</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>layout-id</key>
+				<data>CwAAAA==</data>
+				<key>model</key>
+				<string>Realtek ALC1150</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AAASWQ==</data>
+				<key>device-id</key>
+				<data>ElkAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -755,6 +755,10 @@
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>revcpu</key>
+				<integer>1</integer>
+				<key>revcpuname</key>
+				<string>Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz</string>
 				<key>rtc-blacklist</key>
 				<data></data>
 			</dict>
@@ -782,6 +786,9 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<array>
 				<string>rtc-blacklist</string>
+				<string>revcpu</string>
+				<string>revcpuname</string>
+				<string>revpatch</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -837,7 +844,7 @@
 			<key>MLB</key>
 			<string>C02941802J9KGQG1M</string>
 			<key>ProcessorType</key>
-			<integer>4105</integer>
+			<integer>1537</integer>
 			<key>ROM</key>
 			<data>HBsNAQZH</data>
 			<key>SpoofVendor</key>
